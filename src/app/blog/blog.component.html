@@ -1,1 +1,28 @@
-<p>blog works!</p>
+<li [ngClass]="{'list-group-item': true, 'post_item': true}">
+    <div [ngClass]="{'row': true}">
+        <div [ngClass]="{'col-md-6': true}">
+            <h3>{{ title }}</h3>
+        </div>
+        <div [ngClass]="{'col-md-6': true}">
+            <p [ngClass]="{'created_at_block': true}">{{ createdAt | date: 'd/MM/y, h:mm a' }}</p>
+        </div>
+    </div>
+    <div [ngClass]="{'row': true}">
+        <p>
+            {{ content }}
+        </p>
+    </div>
+    <div [ngClass]="{'row': true}">
+        <div [ngClass]="{'row': true}">
+            <div [ngClass]="{'col-md-6': true}">
+                <button (click)="loveIt()" [ngClass]="{'btn': true, 'btn-success': true, 'post_action_btn': true}">Love it</button>
+                <button (click)="dontLoveIt()" [ngClass]="{'btn': true, 'btn-danger': true, 'post_action_btn': true}">Don't love it</button>
+            </div>
+            <div [ngClass]="{'col-md-6': true}">
+                <p [ngStyle]="{'float': 'right'}">
+                    <span>Loves : {{ loveIts }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</li>
