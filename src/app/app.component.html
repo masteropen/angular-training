@@ -1,16 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h2>Mes appareils</h2>
-      <p>Mis à jour le : {{ lastUpdate | async | date: 'd MMMM y' | uppercase }}</p>
+      <h2>Posts</h2>
       <ul class="list-group">
-        <app-appareil  *ngFor="let appareil of appareils"
-                       [appareilName]="appareil.name"
-                       [appareilStatus]="appareil.status"></app-appareil>
+        <app-blog *ngFor="let post of posts"
+                  [title]="post.title"
+                  [content]="post.content"
+                  [createdAt]="post.created_at"
+                  [loveIts]="post.loveIts"></app-blog>
       </ul>
-      <button class="btn btn-success"
-              [disabled]="!isAuth"
-              (click)="onAllumer()">Tout allumer</button>
     </div>
   </div>
 </div>
