@@ -1,18 +1,32 @@
-# MonProjetAngular
+# Angular 9 training
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+This project deals with a lot of concepts that you need to know when you start with Angular:
+- Components
+- Directive and Pipes
+- Data binding, Event listening using Observable and Subscription
+- Services
+- Routing
+- Forms
+- Interaction with server ...
 
-## Development server
+This project was generated during my Angular training in `OpenClassrooms` with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Prerequisites
 
-## Code scaffolding
+To be able to run this application, you need these dependencies:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Nodejs
+- npm package manager
 
-## Build
+## Running application
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Clone this repository : `git clone https://github.com/masteropen/angular-training.git`
+
+2. Install dependencies : `npm install`
+
+2. At the project root, run `ng serve` for a dev server.
+
+3. Navigate to `http://localhost:4200`. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
